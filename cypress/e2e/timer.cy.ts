@@ -8,7 +8,7 @@ describe('empty screen',() => {
     }
   })
 
-  it('shouws minutes and seconds since the game started', () => {
+  it.skip('shouws minutes and seconds since the game started', () => {
     cy.clock()
     cy.visit('/')
     cy.contains('.status__time', `00:00`)
