@@ -13,6 +13,7 @@ describe('empty screen',() => {
     cy.visit('/')
     cy.contains('.status__time', `00:00`)
     cy.tick(30_000)
+    cy.wait(0)
     cy.contains('.status__time', `00:30`)
   })
 
